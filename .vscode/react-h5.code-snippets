@@ -1,0 +1,97 @@
+{
+  "React Basic Template": {
+    "prefix": "react18",
+    "description": "react function template",
+    "body": [
+      "import { FC, useState, useEffect } from 'react'",
+      "",
+      "interface I${TM_FILENAME_BASE} {}",
+      "",
+      "const ${TM_FILENAME_BASE}: FC<I${TM_FILENAME_BASE}> = () => {",
+      "  const [name, setName] = useState('${TM_FILENAME_BASE}')",
+      "",
+      "  useEffect(() => {",
+      "    return () => {}",
+      "  }, [])",
+      "",
+      "  const handleClick = () => {",
+      "    setName('${TM_FILENAME_BASE}2')",
+      "  }",
+      "",
+      "  return <div onClick={handleClick}>{name}</div>",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}"
+    ]
+  },
+  "React async function template": {
+    "prefix": "tcf",
+    "body": ["asyncFun().then((res) => {console.log(res)})", ".catch((err) => {console.log(err)})", ".finally(()=>{})"],
+    "description": "Async chain operation "
+  },
+  "useState Hook": {
+    "prefix": "usestate",
+    "body": ["const [${1:state}, set${1/(.*)/${1:/pascalcase}/}] = useState($0);"],
+    "description": "Inserts a useState hook."
+  },
+  "useEffect Hook": {
+    "prefix": "useeffect",
+    "body": ["useEffect(() => {", "  ", "  return () => {}", "}, [])"],
+    "description": "React useEffect template"
+  },
+  "useMemo Hook": {
+    "prefix": "usememo",
+    "body": ["const needRender = useMemo(() => { excuteLogic }, [detectiveArray])"],
+    "description": "Log output to react useMemo template"
+  },
+  "useCallback Hook": {
+    "prefix": "usecallback",
+    "body": ["const handleFunction = useCallback(() => { excuteLogic }, [detectiveArray])"],
+    "description": "Log output to react useCallback template"
+  },
+  "useSelector Hook": {
+    "prefix": "useSelector",
+    "body": [" const value = useSelector((state) => state.name)"],
+    "description": "Log output to useSelector"
+  },
+  "React handleEvent template": {
+    "prefix": "handleEvent",
+    "body": ["const handle${1:name} = () => {}"],
+    "description": "Log output to react useCallback template"
+  },
+  "React import scss": {
+    "prefix": "import scss",
+    "body": ["import './${TM_FILENAME_BASE}.scss'"],
+    "description": "Log output to import scss"
+  },
+  "React import module scss": {
+    "prefix": "import module scss",
+    "body": ["import styles from './${TM_FILENAME_BASE}.module.scss'"],
+    "description": "Log output to import module scss"
+  },
+  "React import image": {
+    "prefix": "import image",
+    "body": ["import imgName from 'assets/images/name.png'"],
+    "description": "Log output to import image"
+  },
+  "React import icon": {
+    "prefix": "import icon",
+    "body": ["import { ReactComponent as nameIcon } from 'assets/icons/name.svg'"],
+    "description": "Log output to import icon"
+  },
+  "React import store": {
+    "prefix": "import store",
+    "body": ["import { dispatch, useSelector } from 'store'", "import { action } from 'store/slice/name'"],
+    "description": "Log output to import action"
+  },
+  "React intl FormattedMessage": {
+    "prefix": "fmsg",
+    "body": ["<FormattedMessage id='id' />"],
+    "description": "Log output to react intl"
+  },
+  "React apis": {
+    "prefix": "apis",
+    "body": ["import {  } from 'apis/';"],
+    "description": "Log output to react intl"
+  }
+}

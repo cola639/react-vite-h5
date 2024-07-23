@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit"
+  },
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "scss", "less"],
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  "cSpell.words": ["Tldraw"]
+}
