@@ -9,7 +9,7 @@ const index: FC<Iindex> = () => {
 
   const handleClick = () => {};
 
-  return <div onClick={handleClick}>[Home]</div>;
+  return <div onClick={handleClick}>HOME</div>;
 };
 
 export default index;
