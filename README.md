@@ -1,5 +1,6 @@
 ### Project env
 ```
+set up
 node 16.18.1 
 pnpm 8.11.0
 ```
